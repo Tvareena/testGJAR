@@ -1,11 +1,12 @@
 # Kaleidoscope Spellcasting — HTML prototype
 
-## Play (no install, no commands)
+## ▶ [Play in your browser](https://tvareena.github.io/testGJAR/)
 
-1. Download this repository: green **Code** button → **Download ZIP**, then unzip it (or clone it).
-2. Double-click **`play.html`**. It opens in your browser and plays straight away — Chrome, Edge, Firefox or Safari.
+Works on desktop, phones and tablets (landscape). No install, no download. The page updates a minute or two after each push to `main`.
 
-`play.html` is a single self-contained file with all code, data, art and sound inside, so you can also send just that one file to someone. It is generated: after changing anything in `src/`, `data/` or `assets/`, run `python build.py` and commit the new `play.html`.
+### Play offline
+
+Download this repository (green **Code** button → **Download ZIP**, then unzip) and double-click **`play.html`** — a single self-contained file with all code, data, art and sound inside, so you can also send just that one file to someone (desktop browsers; iPhone and iPad need the link above). It is generated: after changing anything in `src/`, `data/` or `assets/`, run `python build.py` and commit the new `play.html`.
 
 ## Run locally (for development)
 
