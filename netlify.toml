@@ -1,0 +1,11 @@
+# Netlify hosting: the game is plain static files, so there is no build step.
+# Netlify serves index.html from the repository root; every push to main redeploys.
+[build]
+  publish = "."
+  command = ""
+
+# Always check for new code and data, so players get the latest build after each push.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
