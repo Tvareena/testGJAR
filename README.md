@@ -1,6 +1,13 @@
 # Kaleidoscope Spellcasting — HTML prototype
 
-## Run locally
+## Play (no install, no commands)
+
+1. Download this repository: green **Code** button → **Download ZIP**, then unzip it (or clone it).
+2. Double-click **`play.html`**. It opens in your browser and plays straight away — Chrome, Edge, Firefox or Safari.
+
+`play.html` is a single self-contained file with all code, data, art and sound inside, so you can also send just that one file to someone. It is generated: after changing anything in `src/`, `data/` or `assets/`, run `python build.py` and commit the new `play.html`.
+
+## Run locally (for development)
 
 From this folder:
 
@@ -26,7 +33,7 @@ Bad values in the JSON files never crash the game: they are replaced by defaults
 ## Building a release (itch.io)
 
 1. Bump the version in `src/version.js` and the matching `?v=` in `index.html`.
-2. Run `python build.py`. It writes `../builds/kaleidoscope-spellcasting-<version>.zip` with `index.html` at the root (it refuses to build if the two versions differ).
+2. Run `python build.py`. It refreshes `play.html` and writes `../builds/kaleidoscope-spellcasting-<version>.zip` with `index.html` at the root (it refuses to build if the two versions differ).
 3. On itch.io: new project, kind "HTML", upload the zip, tick "This file will be played in the browser", viewport 1920 x 1080, enable "Mobile friendly" (landscape) and "Fullscreen button".
 4. Open the public page on a phone and play spell 1 to the end.
 

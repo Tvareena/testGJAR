@@ -8,4 +8,5 @@ Rules (see the HTML Prototype Task List, "Art placeholders and final art"):
 5. Buttons without text - the game draws the labels (Run, Activate) from text.json
 
 Any file missing here is drawn as a code placeholder. After adding files, reload with Ctrl+F5.
+To get the new art into play.html (the double-click version), run `python build.py` and commit play.html.
 The full list of expected names is ART_REGISTRY in src/assets.js.

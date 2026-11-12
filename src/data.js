@@ -334,6 +334,14 @@ export function checkText(data) {
 }
 
 async function loadJSON(file, warn) {
+  // play.html (single-file build) carries the data inside the page, because browsers block fetch()
+  // for pages opened straight from disk.
+  const embedded = globalThis.KS_EMBED?.data;
+  if (embedded) {
+    if (file in embedded) return structuredClone(embedded[file]);
+    warn(`${file}: not included in this build, using defaults`);
+    return undefined;
+  }
   try {
     const res = await fetch(`data/${file}?v=${VERSION}`, { cache: 'no-cache' });
     if (!res.ok) { warn(`${file}: could not load (HTTP ${res.status}), using defaults`); return undefined; }

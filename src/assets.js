@@ -73,15 +73,31 @@ function loadImage(entry) {
       }
       resolve({ ...entry, img, final: true, note });
     };
-    img.onerror = () => {
+    const missing = () => {
       console.warn(`[assets] art missing, using placeholder: assets/art/${entry.name}.png`);
       resolve({ ...entry, img: makePlaceholder(entry), final: false });
     };
+    img.onerror = missing;
+    // play.html (single-file build) carries art as data URIs: images loaded from disk would taint the
+    // canvas and break matching, data URIs do not.
+    const embedded = globalThis.KS_EMBED;
+    if (embedded) {
+      const uri = embedded.art?.[entry.name];
+      if (uri) img.src = uri;
+      else missing();
+      return;
+    }
     img.src = artUrl(entry.name);
   });
 }
 
 async function loadAudio(entry) {
+  const embedded = globalThis.KS_EMBED;
+  if (embedded) {
+    const uri = embedded.audio?.[entry.name] ?? null;
+    if (!uri) console.warn(`[assets] audio missing, will be silent: assets/audio/${entry.name}.mp3`);
+    return { ...entry, url: uri, final: !!uri };
+  }
   try {
     const res = await fetch(audioUrl(entry.name));
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
