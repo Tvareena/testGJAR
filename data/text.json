@@ -1,0 +1,174 @@
+{
+  "ui": {
+    "title": "Kaleidoscope Spellcasting",
+    "start": "Start",
+    "run": "Run",
+    "activate": "Activate",
+    "restart": "Restart",
+    "menu": "Menu",
+    "mute": "Mute",
+    "unmute": "Sound on",
+    "loading": "Loading",
+    "rotateDevice": "Rotate your device",
+    "threshold": "Needs",
+    "match": "match",
+    "fizzled": "The spell fizzles",
+    "continue": "Click to continue",
+    "skip": "Skip",
+    "skipHint": "Click to skip",
+    "resonance": { "label": "Resonance", "low": "Low", "medium": "Medium", "high": "High" },
+    "ratings": { "pass": "Pass", "great": "Great", "perfect": "Perfect" },
+    "end": { "title": "The chain is complete", "runs": "Runs", "spell": "Spell", "rating": "Rating", "total": "Total runs" }
+  },
+  "characters": {
+    "protagonist": "[placeholder] Protagonist"
+  },
+  "spells": {
+    "spark": {
+      "name": "Spark",
+      "description": "[placeholder] A single flicker of fire.",
+      "incantation": "[placeholder] Kindle.",
+      "hint": {
+        "full": "One red pebble.",
+        "colors": "Red.",
+        "partial": "Something red."
+      }
+    },
+    "lantern": {
+      "name": "Lantern",
+      "description": "[placeholder] Steady light to see by.",
+      "incantation": "[placeholder] Hold the light.",
+      "hint": {
+        "full": "A yellow pebble and a yellow stick.",
+        "colors": "Yellow and yellow.",
+        "partial": "A yellow pebble and ?"
+      }
+    },
+    "gust": {
+      "name": "Gust",
+      "description": "[placeholder] A breath of wind through the street.",
+      "incantation": "[placeholder] Carry it away.",
+      "hint": {
+        "full": "Two white sticks.",
+        "colors": "White and white.",
+        "partial": "A white stick and ?"
+      }
+    },
+    "ward": {
+      "name": "Ward",
+      "description": "[placeholder] A circle that keeps harm out.",
+      "incantation": "[placeholder] Hold the line.",
+      "hint": {
+        "full": "A green ring and a white stick.",
+        "colors": "Green and white.",
+        "partial": "A green ring and ?"
+      }
+    },
+    "mist": {
+      "name": "Mist",
+      "description": "[placeholder] Fire meets water, and the street goes soft and grey.",
+      "incantation": "[placeholder] Veil.",
+      "hint": {
+        "full": "A red cylinder, a blue pebble and a blue stick.",
+        "colors": "Red and blue.",
+        "partial": "A red cylinder and ?"
+      }
+    },
+    "root-bridge": {
+      "name": "Root Bridge",
+      "description": "[placeholder] Living wood that spans the gap.",
+      "incantation": "[placeholder] Grow across.",
+      "hint": {
+        "full": "A green cylinder, a yellow stick, a green pebble and a white pebble.",
+        "colors": "Green, yellow, green and white.",
+        "partial": "A green cylinder and ?"
+      }
+    },
+    "shatter": {
+      "name": "Shatter",
+      "description": "[placeholder] Break what holds the door shut.",
+      "incantation": "[placeholder] Come apart.",
+      "hint": {
+        "full": "A violet shard, a white shard, a violet stick and a red pebble.",
+        "colors": "Violet, white, violet and red.",
+        "partial": "A violet shard and ?"
+      }
+    },
+    "night-tide": {
+      "name": "Night Tide",
+      "description": "[placeholder] Dream water rising under the streetlights.",
+      "incantation": "[placeholder] Rise.",
+      "hint": {
+        "full": "A blue ring, a violet pebble, a violet cylinder, a blue stick and a white pebble.",
+        "colors": "Blue, violet, violet, blue and white.",
+        "partial": "A blue ring and ?"
+      }
+    },
+    "final": {
+      "name": "[placeholder] Final Spell",
+      "description": "[placeholder] Every colour at once.",
+      "incantation": "[placeholder] The final words.",
+      "hint": {
+        "full": "One crystal of every colour.",
+        "colors": "Red, blue, yellow, green, violet and white.",
+        "partial": "A red shard and ?"
+      }
+    }
+  },
+  "barks": {
+    "fizzle": [
+      "[placeholder] The glass hums, then goes quiet.",
+      "[placeholder] Close. The pattern slips away.",
+      "[placeholder] Not quite. Look at the reflections again."
+    ],
+    "pass": ["[placeholder] It holds."],
+    "great": ["[placeholder] Clean and bright."],
+    "perfect": ["[placeholder] Flawless."]
+  },
+  "tutorial": {
+    "spark": [
+      "Drag the crystal from the tray into the chamber.",
+      "Press Run to see what the mirrors make of it.",
+      "Compare your pattern with the spell on the left.",
+      "When they look alike, press Activate."
+    ],
+    "lantern": [
+      "Select a crystal and use the arrows to rotate it.",
+      "The resonance meter shows how close you are after each Run."
+    ]
+  },
+  "scenes": {
+    "intro": [
+      { "speaker": "protagonist", "portrait": "neutral", "background": "bg-street", "text": "[placeholder] Intro line one. The writer replaces this." },
+      { "speaker": "protagonist", "portrait": "worried", "background": "bg-street", "text": "[placeholder] Intro line two." }
+    ],
+    "interlude-1": [
+      { "speaker": "protagonist", "portrait": "happy", "background": "bg-street", "text": "[placeholder] Interlude after Spark." }
+    ],
+    "interlude-2": [
+      { "speaker": "protagonist", "portrait": "neutral", "background": "bg-street", "text": "[placeholder] Interlude after Lantern." }
+    ],
+    "interlude-3": [
+      { "speaker": "protagonist", "portrait": "neutral", "background": "bg-street", "text": "[placeholder] Interlude after Gust." }
+    ],
+    "interlude-4": [
+      { "speaker": "protagonist", "portrait": "happy", "background": "bg-street", "text": "[placeholder] Interlude after Ward." }
+    ],
+    "interlude-5": [
+      { "speaker": "protagonist", "portrait": "worried", "background": "bg-street", "text": "[placeholder] Interlude after Mist." }
+    ],
+    "interlude-6": [
+      { "speaker": "protagonist", "portrait": "neutral", "background": "bg-street", "text": "[placeholder] Interlude after Root Bridge." }
+    ],
+    "interlude-7": [
+      { "speaker": "protagonist", "portrait": "worried", "background": "bg-street", "text": "[placeholder] Interlude after Shatter." }
+    ],
+    "interlude-8": [
+      { "speaker": "protagonist", "portrait": "neutral", "background": "bg-final", "text": "[placeholder] Interlude after Night Tide. One spell left." }
+    ],
+    "ending": [
+      { "speaker": "protagonist", "portrait": "happy", "background": "bg-final", "text": "[placeholder] Ending line one. The writer replaces this." },
+      { "speaker": "protagonist", "portrait": "happy", "background": "bg-final", "text": "[placeholder] Ending line two." }
+    ]
+  }
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "spark",
+    "segments": 4,
+    "threshold": 0.70,
+    "hint": "full",
+    "tray": ["red-pebble"],
+    "solution": [
+      { "c": "red-pebble", "x": 0.10, "y": 0.55, "r": 0 }
+    ],
+    "sceneBefore": "intro",
+    "sceneAfter": "interlude-1"
+  },
+  {
+    "id": "lantern",
+    "segments": 4,
+    "threshold": 0.70,
+    "hint": "full",
+    "tray": ["yellow-pebble", "yellow-stick"],
+    "solution": [
+      { "c": "yellow-pebble", "x": -0.12, "y": 0.45, "r": 0 },
+      { "c": "yellow-stick", "x": 0.15, "y": 0.70, "r": 60 }
+    ],
+    "sceneAfter": "interlude-2"
+  },
+  {
+    "id": "gust",
+    "segments": 6,
+    "threshold": 0.75,
+    "hint": "full",
+    "tray": ["white-stick", "white-stick"],
+    "solution": [
+      { "c": "white-stick", "x": 0.0, "y": 0.45, "r": 0 },
+      { "c": "white-stick", "x": 0.207, "y": 0.773, "r": 60 }
+    ],
+    "sceneAfter": "interlude-3"
+  },
+  {
+    "id": "ward",
+    "segments": 6,
+    "threshold": 0.75,
+    "hint": "full",
+    "tray": ["green-ring", "white-stick"],
+    "solution": [
+      { "c": "green-ring", "x": -0.25, "y": 0.433, "r": 0 },
+      { "c": "white-stick", "x": 0.135, "y": 0.768, "r": 105 }
+    ],
+    "sceneAfter": "interlude-4"
+  },
+  {
+    "id": "mist",
+    "segments": 6,
+    "threshold": 0.80,
+    "hint": "colors",
+    "tray": ["red-cylinder", "blue-pebble", "blue-stick"],
+    "solution": [
+      { "c": "red-cylinder", "x": 0.0, "y": 0.35, "r": 90 },
+      { "c": "blue-pebble", "x": -0.19, "y": 0.59, "r": 30 },
+      { "c": "blue-stick", "x": 0.22, "y": 0.82, "r": 120 }
+    ],
+    "sceneAfter": "interlude-5"
+  },
+  {
+    "id": "root-bridge",
+    "segments": 8,
+    "threshold": 0.80,
+    "hint": "partial",
+    "tray": ["green-cylinder", "yellow-stick", "green-pebble", "white-pebble", "green-stick"],
+    "solution": [
+      { "c": "green-cylinder", "x": 0.0, "y": 0.30, "r": 0 },
+      { "c": "yellow-stick", "x": 0.21, "y": 0.508, "r": 105 },
+      { "c": "green-pebble", "x": -0.15, "y": 0.704, "r": 0 },
+      { "c": "white-pebble", "x": 0.125, "y": 0.89, "r": 0 }
+    ],
+    "sceneAfter": "interlude-6"
+  },
+  {
+    "id": "shatter",
+    "segments": 8,
+    "threshold": 0.85,
+    "hint": "partial",
+    "tray": ["violet-shard", "white-shard", "violet-stick", "red-pebble"],
+    "solution": [
+      { "c": "red-pebble", "x": 0.035, "y": 0.197, "r": 0 },
+      { "c": "violet-shard", "x": 0.0, "y": 0.40, "r": 15 },
+      { "c": "white-shard", "x": -0.168, "y": 0.628, "r": 75 },
+      { "c": "violet-stick", "x": 0.177, "y": 0.831, "r": 45 }
+    ],
+    "sceneAfter": "interlude-7"
+  },
+  {
+    "id": "night-tide",
+    "segments": 8,
+    "threshold": 0.85,
+    "hint": "none",
+    "tray": ["blue-ring", "violet-cylinder", "blue-stick", "white-pebble", "violet-pebble"],
+    "solution": [
+      { "c": "blue-ring", "x": 0.0, "y": 0.30, "r": 0 },
+      { "c": "violet-pebble", "x": -0.164, "y": 0.451, "r": 60 },
+      { "c": "violet-cylinder", "x": 0.142, "y": 0.531, "r": 30 },
+      { "c": "blue-stick", "x": -0.216, "y": 0.666, "r": 135 },
+      { "c": "white-pebble", "x": 0.077, "y": 0.877, "r": 0 }
+    ],
+    "sceneAfter": "interlude-8"
+  },
+  {
+    "id": "final",
+    "segments": 12,
+    "threshold": 0.90,
+    "hint": "none",
+    "tray": ["red-shard", "blue-ring", "yellow-stick", "green-cylinder", "violet-pebble", "white-stick"],
+    "solution": [
+      { "c": "red-shard", "x": 0.0, "y": 0.22, "r": 0 },
+      { "c": "blue-ring", "x": 0.056, "y": 0.396, "r": 0 },
+      { "c": "yellow-stick", "x": -0.114, "y": 0.538, "r": 90 },
+      { "c": "green-cylinder", "x": 0.073, "y": 0.696, "r": 0 },
+      { "c": "violet-pebble", "x": -0.142, "y": 0.808, "r": 45 },
+      { "c": "white-stick", "x": 0.161, "y": 0.916, "r": 15 }
+    ],
+    "sceneAfter": "ending"
+  }
+]

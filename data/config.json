@@ -1,0 +1,30 @@
+{
+  "colors": {
+    "red": "#e8463c",
+    "blue": "#3c7be8",
+    "yellow": "#f2c230",
+    "green": "#3cbf6a",
+    "violet": "#9a5ce6",
+    "white": "#eef2f7"
+  },
+  "shapes": { "pebble": 0.14, "stick": 0.22, "cylinder": 0.18, "ring": 0.16, "shard": 0.17 },
+  "crystalAlpha": 0.85,
+  "positionSnap": 0.0,
+  "rotationSnap": 15,
+  "ratingBands": { "great": 0.90, "perfect": 0.97 },
+  "resonanceBands": { "medium": 0.50, "high": 0.75 },
+  "difficultyOffset": 0.0,
+  "ghostHintAfter": 3,
+  "matchResolution": 128,
+  "matchTolerance": 0.016,
+  "partialCredit": false,
+  "activation": {
+    "lock": 0.4,
+    "focus": 0.8,
+    "align": 1.0,
+    "overlap": 1.0,
+    "score": 1.0,
+    "resolve": 1.3,
+    "fizzle": 1.5
+  }
+}
